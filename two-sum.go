@@ -1,4 +1,3 @@
-import "fmt"
 func twoSum(nums []int, target int) []int {
     var hashmap map[int]int
     hashmap = make(map[int]int)
