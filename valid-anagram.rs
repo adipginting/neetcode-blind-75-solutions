@@ -27,7 +27,6 @@ impl Solution {
             if let Some(number_s) = hashmap_s.get(&ch){
                 if let Some (number_t) = hashmap_t.get(&ch){
                     if (*number_s == *number_t){
-                        println!("{}", ch);
                         continue;
                     } else {
                         return false;
