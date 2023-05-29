@@ -8,7 +8,8 @@ class Solution {
     // 2. sort the characters, convert the ordered characters back to string, and use it as a key in a hashmap
     // 3. check whether each string exists inside the hashmap and add them using list of string
     // 4. put all of the content of the anagrams and non anagrams to a list 
-    add every value inside the hashmap to a new List
+    // 5. add every value inside the hashmap to a new List
+    
     HashMap<String, List<String>> map = new HashMap<>();
     List<List<String>> result = new ArrayList<>();
     for (String str : strs) {
