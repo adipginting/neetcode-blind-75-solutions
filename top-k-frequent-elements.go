@@ -3,7 +3,7 @@ func topKFrequent(nums []int, k int) []int {
 	// 1. Insert the numbers to a map to count to frequency of the numbers
 	// 2. Loop through the map and insert the number to bucket list by the number
 	// 3. The number of the array in the bucket list is the same with the length of the nums array
-	if len(nums) == 1 {
+	if k == 1 && len(nums) <= 2 {
 		return []int{nums[0]}
 	}
 
@@ -21,8 +21,6 @@ func topKFrequent(nums []int, k int) []int {
 	for key, value := range theMap {
 		array[value] = append(array[value], key)
 	}
-
-	fmt.Println(array)
 
 	var result []int = []int{}
 	for i := len(array) - 1; i > 0; i-- {
